@@ -30,7 +30,7 @@
 
 ### 2. 烧录 Lua 脚本
 
-使用 **LuaTools** 烧录 `main.lua` 脚本：
+使用 **LuaTools** 烧录 `main.lua` 脚本，第一次烧录需要点击 「下载底层和脚本」
 
 ![write.png](screenshots/write.png)
 
@@ -49,3 +49,4 @@
 ./uart_sms_forwarder
 ```
 
+等待程序启动，默认会自动识别串口，确定串口之后，建议更改 config.yaml 中的串口配置。
