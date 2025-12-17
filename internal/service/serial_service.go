@@ -84,6 +84,7 @@ func (s *SerialService) Start() {
 			s.logger.Warn("串口连接异常，将重试",
 				zap.Error(err),
 				zap.Duration("retry_after", retryAfter))
+			s.deviceCache.Delete(CacheKeyDeviceStatus)
 
 			time.Sleep(retryAfter)
 		}
@@ -593,7 +594,7 @@ func (s *SerialService) handleSMSSendResult(msg map[string]interface{}) {
 			zap.String("request_id", requestID))
 	} else {
 		status = models.MessageStatusFailed
-		s.logger.Error("短信发送失败",
+		s.logger.Warn("短信发送失败",
 			zap.String("to", to),
 			zap.String("request_id", requestID))
 	}

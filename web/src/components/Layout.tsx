@@ -120,7 +120,9 @@ export default function Layout() {
                                         "w-2 h-2  rounded-full animate-pulse",
                                         deviceStatus?.connected ? 'bg-green-500' : 'bg-red-500',
                                     )}/>
-                                    <div className={'text-xs font-medium text-gray-600'}>设备在线</div>
+                                    <div className={'text-xs font-medium text-gray-600'}>
+                                        {deviceStatus?.connected ? '设备在线' : '设备离线'}
+                                    </div>
                                 </div>
                                 <div className="text-[10px] text-gray-400 font-mono mt-0.5">
                                     {deviceStatus?.port_name}
