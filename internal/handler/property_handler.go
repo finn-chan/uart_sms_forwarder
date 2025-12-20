@@ -134,7 +134,8 @@ func (h *PropertyHandler) TestNotificationChannel(c echo.Context) error {
 	case "feishu":
 		sendErr = h.notifier.SendFeishuByConfig(ctx, targetChannel.Config, message)
 	case "webhook":
-		sendErr = h.notifier.SendWebhookByConfig(ctx, targetChannel.Config, service.IncomingSMS{
+		sendErr = h.notifier.SendWebhookByConfig(ctx, targetChannel.Config, service.NotificationMessage{
+			Type:      "sms",
 			From:      "13800001234",
 			Content:   message,
 			Timestamp: time.Now().Unix(),

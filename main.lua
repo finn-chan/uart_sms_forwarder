@@ -8,7 +8,7 @@
 -- =================================================================================
 
 PROJECT = "uart_sms_forwarder"
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 
 log.info("main", PROJECT, VERSION)
 
