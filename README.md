@@ -32,7 +32,7 @@
 
 ### 2. 烧录 Lua 脚本
 
-使用 **LuaTools** 烧录 `main.lua` 脚本，第一次烧录需要点击 「下载底层和脚本」
+使用 [**LuaTools**](https://docs.openluat.com/air780epm/common/Luatools/) 烧录 `main.lua` 脚本，第一次烧录需要点击 「下载底层和脚本」
 
 ![write.png](screenshots/write.png)
 
