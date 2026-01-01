@@ -68,7 +68,7 @@ function get_mobile_info()
 
     info.is_registered = (net_stat == 1 or net_stat == 5)
     info.is_roaming = net_stat == 5
-    info.uptime = mcu.ticks2() -- 单位为毫秒
+    info.uptime = mcu.ticks2() -- 单位为秒
 
     return info
 end

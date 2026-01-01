@@ -275,7 +275,7 @@ export default function SerialControl() {
                                     <div className="flex justify-between items-center pb-2 border-b">
                                         <span className="text-xs text-gray-500">开机时长</span>
                                         <span className="text-sm font-medium">
-                                            {formatUptime(mobile.uptime/1000)}
+                                            {formatUptime(mobile.uptime)}
                                         </span>
                                     </div>
                                     <div className="flex justify-between items-center pb-2 border-b">
