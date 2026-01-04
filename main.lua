@@ -199,10 +199,10 @@ sys.subscribe("CC_IND", function(state)
         call_ring_count = call_ring_count + 1
 
         -- 响4声后自动挂断（可根据需求调整）
-        if call_ring_count > 3 then
-            log.info("Call", "自动挂断来电")
-            cc.hangUp()
-        end
+--         if call_ring_count > 3 then
+--             log.info("Call", "自动挂断来电")
+--             cc.hangUp()
+--         end
 
     elseif state == "DISCONNECTED" then
         -- 电话被挂断

@@ -87,7 +87,7 @@ export default function Dashboard() {
                 <h2 className="text-lg font-semibold text-gray-900 mb-4">系统信息</h2>
                 <div className="space-y-2 text-sm text-gray-600">
                     <p>• 自动接收短信并发送通知到配置的渠道</p>
-                    <p>• 自动接收来电并发送通知（响铃4次后自动挂断）</p>
+                    <p>• 自动接收来电并发送通知</p>
                     <p>• 支持定时发送短信</p>
                     <p>• 支持手动发送短信和串口控制</p>
                     <p>• 短信记录自动保存到数据库</p>
